@@ -3,20 +3,20 @@ const expect = chai.expect;
 const { isFive, isOdd, myRange } = require("../funcs");
 
 describe("isFive(num)", () => {
-  it("should return true if the num is 5 otherwise false", () => {
-    const num1 = 5;
+  it("should return true if the num is 5 otherwise false", () => { //human readable explanation of what it should test. 
+    const num1 = 5; //our first tester value
 
-    const actual1 = isFive(num1);
+    const actual1 = isFive(num1); //our first tester for isFive
 
-    expect(actual1).to.be.true;
+    expect(actual1).to.be.true;//runs the tester expecting a true response
 
-    const otherInput = "not 5";
-    const num2 = 4;
+    const otherInput = "not 5"; //literally a string. should return false
+    const num2 = 4; //4 is not 5 so it will be false
 
-    const actual2 = isFive(num2);
-    const actual3 = isFive(otherInput);
-    expect(actual2).to.be.false;
-    expect(actual3).to.be.false;
+    const actual2 = isFive(num2); //...
+    const actual3 = isFive(otherInput);//our two declarations
+    expect(actual2).to.be.false; //runs actual2 with it expecting to be false
+    expect(actual3).to.be.false; //runs actual3 with it expecting to be false
   });
 });
 
